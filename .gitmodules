@@ -1,3 +1,3 @@
-[submodule "pong-py"]
+[submodule "pong_py"]
 	path = pong_py
 	url = https://github.com/bottamichele/Pong-Python
