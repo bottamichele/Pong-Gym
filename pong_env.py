@@ -2,15 +2,15 @@ import numpy as np
 
 from enum import Enum
 
-from pong_py.pong.ball import Ball
-from pong_py.pong.paddle import Paddle
-from pong_py.pong.game import Game
-from pong_py.pong.controller.controller import PaddlePosition, MovingType
-from pong_py.pong.controller.basic_bot_controller import BasicBotController
-from pong_py.pong.controller.bot_controller import BotController
-
 from gymnasium import Env
 from gymnasium.spaces import Discrete, Box
+
+from .pong_py.pong.ball import Ball
+from .pong_py.pong.paddle import Paddle
+from .pong_py.pong.game import Game
+from .pong_py.pong.controller.controller import PaddlePosition, MovingType
+from .pong_py.pong.controller.basic_bot_controller import BasicBotController
+from .pong_py.pong.controller.bot_controller import BotController
 
 from .agent_controller import AgentController
 from .train_pong_cl import TrainPongContactListener

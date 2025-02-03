@@ -1,4 +1,4 @@
-from pong_py.pong.controller.controller import Controller, MovingType
+from .pong_py.pong.controller.controller import Controller, MovingType
 
 class AgentController(Controller):
     """A controller used by a training agent to control a paddle."""
