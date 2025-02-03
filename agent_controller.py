@@ -1,4 +1,4 @@
-from .pong_py.pong.controller.controller import Controller, MovingType
+from pong_py.pong.controller.controller import Controller, MovingType
 
 class AgentController(Controller):
     """A controller used by a training agent to control a paddle."""
@@ -9,6 +9,10 @@ class AgentController(Controller):
         self.is_colliding_ball = False
         self.n_touch = 0
         self._next_move = MovingType.NONE
+
+    @property
+    def paddle(self):
+        return self._paddle
 
     def set_next_move(self, next_move):
         """Set next moving type to .

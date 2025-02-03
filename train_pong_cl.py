@@ -1,6 +1,6 @@
-from .pong_py.pong.game import PongGameContactListener
-from .pong_py.pong.paddle import Paddle
-from .pong_py.pong.ball import Ball
+from pong_py.pong.game import PongGameContactListener
+from pong_py.pong.paddle import Paddle
+from pong_py.pong.ball import Ball
 
 class TrainPongContactListener(PongGameContactListener):
     """A base collision system listener used for training of agents on Pong."""
