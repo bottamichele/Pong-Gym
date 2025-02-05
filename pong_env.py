@@ -25,7 +25,7 @@ from train_pong_cl import TrainPongContactListener
 class BotControllerType(Enum):
     """A bot controller where a training agent to play against."""
 
-    BASIC_BOT = 0,      #Bot with basic strategy.
+    BASIC_BOT = 0       #Bot with basic strategy.
     BOT = 1             #Bot with advanced strategy.
 
 # ==================================================
