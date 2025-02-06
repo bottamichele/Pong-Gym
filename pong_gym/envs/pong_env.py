@@ -128,7 +128,8 @@ class PongEnv(Env):
                         ball_pos.x,
                         ball_pos.y,
                         ball_vel.x,
-                        ball_vel.y])
+                        ball_vel.y],
+                        dtype=self.observation_space.dtype)
     
     def _get_info(self):
         """Return a info dict."""
@@ -140,7 +141,7 @@ class PongEnv(Env):
                  "bot_score": self._current_game.score_paddle_2, 
                  "ball_touched": self._agent_controller.n_touch }
 
-    def reset(self, seed=None, options=None):
+    def reset(self, *, seed=None, options=None):
         super().reset(seed=seed)
 
         #Create and start a new game.
