@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pong_gym"
+version = "1.0"
+dependencies = [
+  "Box2D",
+  "numpy",
+  "gymnasium",
+  "pygame"
+]
+license = "MIT"
+
+[project.urls]
+Repository = "https://github.com/bottamichele/Pong-Gym"
