@@ -10,7 +10,7 @@ This library needs to be installed locally to be used. You need to do the follow
    ```
    git clone --recursive https://github.com/bottamichele/Pong-Gym
    ```
-2. after you have downloaded the repository, you need to run `pip install <path_repository>`
+2. after you have downloaded the repository, you need to run `pip -m install <path_repository>`
    (where ***<path_repository>*** is the absolute path of the repository which is downloaded)
    on terminal to install the library and its all dependecies.
 
