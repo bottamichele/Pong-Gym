@@ -1,6 +1,6 @@
 # Pong-Gymnasium
 ## About
-This repository contains my personal library which supports of 
+This repository contains my personal library which supports 
 my project [Pong clone](https://github.com/bottamichele/Pong-Python) for 
 [Gymnasium](https://gymnasium.farama.org/).
 
