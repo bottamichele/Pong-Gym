@@ -235,13 +235,9 @@ class PongEnv(Env):
 
         if self.render_mode == "human":
             self._window.blit(canvas, canvas.get_rect())
-
-            #pygame.event.pump()
-            # self._clock.tick(self.metadata["render_fps"])
-            pygame.display.flip()
             
-            #pygame.display.update()
-
+            pygame.display.update()
+            pygame.event.pump()
             self._clock.tick(self.metadata["render_fps"])
         else:  # rgb_array
             return np.transpose(np.array(pygame.surfarray.pixels3d(canvas)), axes=(1, 0, 2))
